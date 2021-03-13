@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://example.com/app/profile.php" method="post">
+        <p>
+           <p><label for="name" >
+              Имя: 
+           </label>
+           <input type="text" name="name" required pattern="^[А-Яа-яЁё\s]+$"/>
+            </p>
+            <p><label for="surname" >
+                Фамилия: 
+             </label>
+             <input type="text" name="surname" required pattern="^[А-Яа-яЁё\s]+$"/>
+              </p>
+            <p><label for="patronymic">
+                Отчество: 
+             </label>
+             <input type="text" name="patronymic" pattern="^[А-Яа-яЁё\s]+$" />
+              </p>  
+           <p><label for="sex">
+              Пол: 
+           </label>
+           <input type="radio" name="sex" value="male" />
+           мужской
+           
+           <input type="radio" name="sex" value="female" checked/>
+           женский
+           </p>
+           
+           <p><label for="family">
+            Семейное положение: 
+            </label>
+            <select size="2" multiple name="family[]">
+                <option value="married">Замужем / Женат</option>
+                <option selected value="not married">Незамужем / Неженат</option>
+               </select>
+            </p>
+
+           <br \>
+           <p>
+               <label for="profession" >
+                Профессия: 
+                </label>
+                <input type="text" name="profession" required pattern="^[А-Яа-яЁё\s]+$"/>
+            </p>
+            <p>
+            <label for="education">
+                Образование: 
+                </label>
+            <select>
+                <option label="Не выбрано" value="1" selected>среднее общее</option>
+                <option>среднее профессиональное</option>
+                <option >высшее (бакалавриат)</option>
+                <option>высшее (специалитет, магистратура)</option>
+                <option>высшее (подготовка кадров высшей квалификации)</option>
+            </select>
+            </p>
+            <p>
+                <label for="last place" >
+                 Место последней работы: 
+                 </label>
+                 <input type="text" name="last place" pattern="^[А-Яа-яЁё\s]+$"/>
+             </p>
+             <p>
+                <label for="Worker" >
+                 Должность: 
+                 </label>
+                 <input type="text" name="worker" pattern="^[А-Яа-яЁё\s]+$"/>
+             </p>
+             <p>
+                <label for="reason" >
+                 Причина увольнения: 
+                 </label>
+                 <input type="text" name="reason" pattern="^[А-Яа-яЁё\s]+$"/>
+             </p>
+             <p>
+                <label for="future work" >
+                 Требования к будущей работе: 
+                 </label><br \>
+                 <textarea rows="10" cols="45" name="text"></textarea>
+             </p>
+             <p>
+                <input type="checkbox" name="home" value="yes" checked />Необходимость предоставления жилья
+
+             </p>
+           <br />
+           <p>
+                <label for="number">
+                    Номер телефона:
+                </label>  
+                <input name="number" required pattern="^[ 0-9]+$"/>
+            </p>
+            
+           <p><label for="email">
+              Адрес эл. почты: 
+           </label>
+           <input type="email" name="email" />
+            </p>
+            
+           <br />
+           
+           
+           <input type="submit" value="Отправить">
+           <input type="reset" value="Очистить">
+        </p>
+     </form>
+</body>
+</html>
